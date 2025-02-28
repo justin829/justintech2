@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Tech Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff6e7f, #bfe9ff, #62a8ea); /* Gradient Background */
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 3rem;
+            margin-bottom: 2rem;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #62a8ea;
+            margin-bottom: 1.5rem;
+        }
+
+        .button {
+            background: linear-gradient(to right, #62a8ea, #ff6e7f);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Justin Tech Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Justin Tech Hub</h2>
+            <p>Your ultimate destination for VPN connections, online business solutions, and cyber services</p>
+            <a href="#services" class="cta-btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Justin Tech Hub</h2>
+            <p>At Justin Tech Hub, we specialize in offering a wide range of tech solutions to empower your online business and personal privacy. Our services include secure VPN connections, KRA PIN registration, KUCCPS application assistance, and much more. Our goal is to help you navigate the digital world with ease and security.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>VPN Connections</h3>
+                <p>Protect your online privacy and access restricted content with our reliable VPN connections. Surf the internet securely and anonymously.</p>
+                <a href="#" class="cta-btn">Learn More</a>
+            </div>
+            <div class="service-item">
+                <h3>KRA PIN Registration</h3>
+                <p>Need to register for a KRA PIN? Let us help you with a quick and seamless registration process for your Kenyan Tax Identification Number (TIN).</p>
+                <a href="#" class="cta-btn">Get Started</a>
+            </div>
+            <div class="service-item">
+                <h3>KUCCPS Application Assistance</h3>
+                <p>We assist students in applying for university courses through the KUCCPS platform. Ensure your application is successful with our expert guidance.</p>
+                <a href="#" class="cta-btn">Apply Now</a>
+            </div>
+            <div class="service-item">
+                <h3>Online Business Solutions</h3>
+                <p>From website development to digital marketing, we provide tailored online business solutions to help your business thrive in the digital age.</p>
+                <a href="#" class="cta-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us and our team will respond promptly.</p>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Justin Tech Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
